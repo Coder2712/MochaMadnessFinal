@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+{% include 'header.html' %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABOUT</title>
+    <style type="text/css">
+        body{
+        background:url('/static/bg2.webp');
+         background-repeat : no-repeat;
+         background-attachment: fixed;
+         background-size: 100% 100%;
+        }
+        .col{
+        border-left : 2px solid #779933;
+        margin : 10px;
+        }
+        .card-title{
+        font-size : 38px;
+        font-weight: bold;
+        color : #708238;
+        font-family: Noto Sans;
+        margin : 20px;
+        border-bottom:1px solid #779933;
+        }
+        .card-text-title{
+        font-size:26px;
+        font-weight:;
+        color:#ae7000;
+        font-family:verdana;
+        margin:10px;
+        }
+        .card-text{
+        color : #01796f;
+        font-weight:lighter;
+        font-family:moonlight;
+        font-style:italic;
+        font-size:18px;
+        margin-top: 20px;
+        margin-left:40px;
+        margin-bottom:50px;
+        }
+        .card-img-top{
+        box-shadow: 5px 5px 5px 5px brown;
+        border-radius:10%;
+        border : 2px inset brown;
+        width : 590px;
+        margin:10px;
+        }
+    </style>
+</head>
+<body>
+<div class="row row-col-1">
+
+    <div class="col">
+        <div class="card-body">
+    <h5 class="card-title text-center">MOCHA MADNESS</h5>
+  </div>
+        <h4 class="card-text-title">HEALTH AND SAFETY</h4>
+        <p class="card-text">
+            We continue to stay dedicated to the health and safety of our Guests. Guests are welcome to
+            wear masks and we will continue to have increased cleaning protocols and sanitizing stations available in our cafés.
+            Some self-service stations are still removed, but condiments are available by request.
+        </p>
+         <h4 class="card-text-title just-content-end">CULINARY TEAM</h4>
+        <p class="card-text">
+            Mocha Madness Culinary team came from some of the top restaurant, hospitality and luxury brands in the world.
+            Our renowned team developes a unique food creations and an
+            incredible selection of French pastries and savories made with organic, local and fresh ingredientes .
+        </p>
+    </div>
+
+    <div class="col" style="width: 18rem;">
+         <img src="/static/about21.jpg" class="card-img-top " alt="MM">
+     </div>
+
+</div>
+</body>
+</html>
+<br><br>
+{% include 'footer.html' %}

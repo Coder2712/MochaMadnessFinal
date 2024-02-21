@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% load static %}
+{% include 'header.html' %}
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Blog Home</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-home.css" rel="stylesheet">
+  <style>
+    body{
+        background:url('/static/bg1.jpg');
+         background-repeat : no-repeat;
+         background-attachment: fixed;
+         background-size: 100% 100%;
+        }
+        h1{
+        font-size : 38px;
+        font-weight: bold;
+        color : #708238;
+        font-family: Noto Sans;
+        margin:5%;
+        border-bottom:1px solid #779933;
+        }
+      .card{
+      height:100%;
+      box-shadow: 3px 3px 3px 3px brown;
+      margin-bottom:5px;
+      }
+      .card-title{
+      font-size:24px;
+      color:#993300;
+
+      }
+      .card-text{
+      color : #01796f;
+        font-weight:lighter;
+        font-family:moonlight;
+        font-style:italic;
+        font-size:18px;
+        margin: 20px
+      }
+  </style>
+</head>
+
+<body>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+        <h1 class=" heading">BLOGS
+          <small>keep updated</small>
+        </h1>
+        <!-- Blog Entries Column -->
+        <!-- Blog Post -->
+       <div class="row row-cols-1 row-cols-md-3 mb-3" >
+          {% for i in data %}
+          <div class="col">
+    <div class="card bg-light border-success">
+      <img class="card-img-top" height="200" src="{{i.image.url}}"  alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">{{i.title}}</h5>
+        <p class="card-text text-center">
+            {%load custom_tags%}
+            {%half_contet i.desc as half_data%}
+            {{half_data}}
+        </p>
+          <center><a href="readmore/{{i.id}}" class="btn btn-success">Read More &rarr;</a></center>
+      </div>
+      <div class="card-footer text-mute">
+            -{{i.postby}}
+            <a href="#"></a>
+          </div>
+    </div>
+  </div>
+        {%endfor%}
+</div>
+
+        <!-- Pagination -->
+        <ul class="pagination justify-content-center ">
+          <li class="page-item">
+            <a class="page-link" href="#">&larr; Older</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">Newer &rarr;</a>
+          </li>
+        </ul>
+        <!-- /.Pagination -->
+      </div>
+  </div>
+  <!-- /.container -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+<br><br>
+{% include 'footer.html' %}

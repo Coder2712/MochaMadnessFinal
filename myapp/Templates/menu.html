@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+{% load static %}
+{% include 'header.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <style>
+        body{
+        background:url('/static/bg2.webp');
+         background-repeat : no-repeat;
+         background-attachment: fixed;
+         background-size: 100% 100%;
+
+        }
+        .heading{
+        font-size : 38px;
+        font-weight: bold;
+        color : #708238;
+        font-family: Noto Sans;
+        margin:5%;
+        }
+        .col{
+        padding:7px;
+        margin:8px;
+        }
+        .menu-content{
+        background-color:;
+        border-radius:10%
+        }
+      h3{
+      font-size:26px;
+      font-weight:;
+      color:#ae7000;
+      font-family:verdana;
+      margin:10px;
+      border-bottom:1px solid #779933;
+      }
+      p{
+      color : #01796f;
+      font-weight:lighter;
+      font-family:moonlight;
+      font-style:italic;
+      font-size:18px;
+      margin: 10px
+      }
+      .h5{
+      color:black;
+      }
+      .img-thumbnail{
+      box-shadow: 5px 10px white;
+        border-radius:10%;
+        border : 2px inset brown;
+        box-shadow: 5px 5px 5px 5px brown;
+      }
+    </style>
+</head>
+<body>
+<div class="menu" id="menu">
+  <h1 class="heading text-center">Our <span>Menu</span> </h1>
+  <div class="container">
+    <div class="row">
+      <div class="row row-cols-1 row-cols-md-5 mb-3">
+
+    <div class="col">
+      <div class="menu-img">
+        <img src="/static/bf1.jpg" class="img-thumbnail" alt="Breakfast1">
+      </div>
+      <br>
+        <div class="menu-content">
+          <h3 class="title">Country French Breakfast</h3>
+          <p>
+            Two eggs cooked-to-order, Potato Galette, bacon or sausage & a butter croissant.
+          </p>
+        </div>
+      </div>
+
+    <div class="col">
+      <div class="menu-img">
+        <img src="/static/bf2.jpg" class="img-thumbnail"
+             alt="Breakfast2">
+      </div>
+      <br>
+        <div class="menu-content">
+          <h3 class="title">Croque Madame</h3>
+          <p>
+          Smoked ham & Swiss with garlic cream sauce baked
+          on country bread & topped with a fried egg.
+          Served with wild field & balsamic on the side.
+          </p>
+        </div>
+      </div>
+
+    <div class="col">
+      <div class="menu-img">
+        <img src="/static/bf3.jpg" class="img-thumbnail"
+             alt="Breakfast3">
+      </div>
+      <br>
+        <div class="menu-content">
+          <h3 class="title">American Breakfast</h3>
+          <p>
+            Two eggs cooked-to-order, bacon or
+            sausage & a butter croissant.
+          </p>
+        </div>
+      </div>
+
+         <div class="col">
+      <div class="menu-img">
+        <img src="/static/bf4.jpg" class="img-thumbnail"
+             alt="Breakfast4">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Nouveau Breakfast</h3>
+          <p>
+            One egg cooked-to-order, avocado toast &
+            two strips of bacon.
+          </p>
+        </div>
+      </div>
+
+    <div class="col">
+      <div class="menu-img">
+        <img src="/static/sw1.jpg" class="img-thumbnail"
+             alt="Sandwich1">
+      </div>
+      <br>
+        <div class="menu-content">
+          <h3 class="title">Croque Monsieur</h3>
+          <p>
+            Classic French ham & cheese. Smoked ham & Swiss
+            with garlic cream sauce baked on Country bread.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/sw2.jpg" class="img-thumbnail" alt="Sandwich2">
+      </div>
+          <br>
+        <div class="menu-content">
+          <h3 class="title">French Dip</h3>
+          <p>
+            Premium roast beef, caramelized onions, provolone & horseradish
+            sauce baked on a baguettine. Served au jus.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/sw3.jpg" class="img-thumbnail" alt="Sandwich3">
+      </div>
+          <br>
+        <div class="menu-content">
+          <h3 class="title">Turkey Bistro</h3>
+          <p>
+            Smoked turkey, bacon, provolone, sun-dried tomato pesto,
+            baked on a baguettine.
+          </p>
+        </div>
+      </div>
+
+         <div class="col">
+      <div class="menu-img">
+        <img src="/static/sw4.jpg" class="img-thumbnail" alt="Sandwich4">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Caesar Sandwich</h3>
+          <p>
+            Shaved balsamic marinated chicken and our famous
+            Caesar Salade with Swiss and mayonnaise baked on a baguettine.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/crepe1.jpg" class="img-thumbnail" alt="Crepe1">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Blueberry Cheesecake Crêpe</h3>
+          <p>
+            Two crêpes with a blueberry and cheesecake filling
+            topped with powdered sugar, fresh blueberries and whipped cream.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/crepe2.jpg" class="img-thumbnail" alt="Crepe2">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Crêpe la Madeleine</h3>
+          <p>
+            Balsamic-marinated chicken, rice Provençal, broccoli
+            and Swiss cheese. Topped with mushroom sauce.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/crepe3.jpg" class="img-thumbnail" alt="Crepe3">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Caprese Crêpe</h3>
+          <p>
+            Basil pesto, tomatoes, and freshly sliced mozzarella
+            topped with a sweet balsamic drizzle.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/crepe4.jpg" class="img-thumbnail" alt="Crepe4">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Strawberry Nutella Crêpe</h3>
+          <p>
+            Strawberries and cream topped with drizzled Nutella®, shaved chocolate and whipped cream.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/soup1.jpg" class="img-thumbnail" alt="Soup1">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Country Potato</h3>
+          <p>
+            Served in a cup, bowl or Soup for the Group.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/soup2.jpg" class="img-thumbnail" alt="Soup2">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">French Onion</h3>
+          <p>
+            Served in a cup, bowl or Soup for the Group.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/soup3.jpg" class="img-thumbnail" alt="Soup3">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Our Famous Tomato Basil</h3>
+          <p>
+            Served in a cup, bowl or Soup for the Group.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/soup4.jpg" class="img-thumbnail" alt="Soup4">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Cream of Mushroom</h3>
+          <p>
+            Served in a cup, bowl or Soup for the Group.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/salad1.jpg" class="img-thumbnail" alt="Salad1">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Kale & Quinoa Salade</h3>
+          <p>
+            Kale and quinoa seasonal salade featuring cranberries,
+            pecans and feta with our balsamic vinaigrette dressing.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/salad2.jpg" class="img-thumbnail" alt="Salad2">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Strawberry Bacon Spinach Salade</h3>
+          <p>
+            Spinach salade topped with strawberries, bacon,
+            feta and pecans tossed in French vinaigrette.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/salad3.jpg" class="img-thumbnail" alt="Salad3">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Cranberry Pecan Wild Field Greens</h3>
+          <p>
+            Veggies tossed in balsamic vinaigrette.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/salad4.jpg" class="img-thumbnail" alt="Salad4">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Original Caesar Salade</h3>
+          <p>
+            Romaine, house-made croutons, Parmesan & Fat Free or Original Caesar Dressing.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/bakery1.jpg" class="img-thumbnail" alt="Bakery1">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Butter Croissant</h3>
+          <p>
+            A croissant is filled with buttery, flaky, viennoiserie pastry.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/bakery2.jpg" class="img-thumbnail" alt="Bakery2">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">French Baguette</h3>
+          <p>
+             Baguette, a long, thin, crusty loaf of French bread.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/bakery3.jpg" class="img-thumbnail" alt="Bakery3">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Lemon Madeleine</h3>
+          <p>
+            Lemon madeleine is a  light, sweet and gently crisp
+            deliciousness classic French treat
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/bakery4.jpg" class="img-thumbnail" alt="Bakery4">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Caramel Crème Brûlée</h3>
+          <p>
+            A dessert consisting of a rich custard base topped with a layer of hardened caramelized sugar.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/coffee1.jpg" class="img-thumbnail" alt="coffee1">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Espresso</h3>
+          <p>
+            Extra stout coffee made from dark roasted espresso beans;
+            brewed to order. With less caffeine than American or French roast.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/coffee2.jpg" class="img-thumbnail" alt="coffee2">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Café Americano</h3>
+          <p>
+            Espresso shots topped with hot water make for a rich cup that will keep you going.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/coffee3.1.jpg" class="img-thumbnail" alt="coffee3">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Café Mocha Bocha</h3>
+          <p>
+            A celebration of rich espresso, luscious chocolate & a
+            creamy cloud of frothed milk. Topped with cocoa or cinnamon.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/coffee4.jpg" class="img-thumbnail" alt="coffee4">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title"> French Roast</h3>
+          <p>
+            Dark roasted in the traditional French way for a heavy, extra full body.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/coffee5.jpg" class="img-thumbnail" alt="coffee5">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Caramel Macchiato</h3>
+          <p>
+            Coffee meets caramel and it’s oh-so-sweet. Topped with frothed milk & a caramel swirl.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/coffee6.jpg" class="img-thumbnail" alt="coffee6">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Café Latte</h3>
+          <p>
+            Regular or decaf espresso mixed with hot, foamless, steamed milk. Topped with cocoa or cinnamon.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/coffee7.jpg" class="img-thumbnail" alt="coffee7">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Cappuccino</h3>
+          <p>
+            Rich espresso beneath a creamy cloud of hot frothed milk. Topped with cinnamon or cocoa.
+          </p>
+        </div>
+      </div>
+
+        <div class="col">
+      <div class="menu-img">
+        <img src="/static/coffee8.jpg" class="img-thumbnail" alt="coffee8">
+      </div>
+           <br>
+        <div class="menu-content">
+          <h3 class="title">Hot Chocolate</h3>
+          <p>
+            A blissful marriage of chocolate & creamy steamed milk. Topped with whipped cream and cocoa.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+{% include 'footer.html' %}

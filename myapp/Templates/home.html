@@ -1,0 +1,108 @@
+<!doctype html>
+{% load static %}
+{% include 'header.html' %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+      <style>
+          .card-body{
+          background : url('/static/bg2.webp')
+          background-repeat : no-repeat;
+         background-attachment: fixed;
+         background-size: 100% 100%;
+          }
+          .card-title{
+          font-size : 38px;
+          font-weight: bold;
+          color : #708238;
+          font-family: Noto Sans;
+          margin : 20px;
+          border-bottom : 1px solid #779933;
+          }
+         .col{
+        border-left : 2px solid #779933;
+        }
+        .card-text-title{
+        font-size:26px;
+        font-weight:;
+        color:#ae7000;
+        font-family:verdana;
+        margin:10px;
+        }
+         .card-text{
+         color : #01796f;
+        font-weight:lighter;
+        font-family:moonlight;
+        font-style:italic;
+        font-size:18px;
+        margin-top: 20px;
+        margin-left:40px;
+        margin-bottom:50px;
+          }
+          .img-thumbnail{
+          box-shadow: 5px 10px 5px 5px #888888;
+          border : 2px inset grey;
+        border-radius:10%;
+        height: 500px;
+        width:700px;
+      }
+      </style>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <!-- Example Code -->
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="/static/home1.jpeg" class="d-block w-100" alt="..." width="500" height="600">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="/static/home2.jpg" class="d-block w-100" alt="..." width="500" height="600">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="/static/home3.jpg" class="d-block w-100" alt="..." width="500" height="600">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <br><br>
+    <div class="row row-col-1">
+      <div class="col" style="width: 18px;">
+  <img src="/static/about1.jpg" class="img-thumbnail" alt="MM">
+</div>
+      <div class="col">
+        <div class="card-body">
+    <h5 class="card-title text-center"><b>MOCHA MADNESS</b></h5>
+  </div>
+        <h4 class="card-text-title">WHO ARE WE?</h4>
+        <p class="card-text">
+            France has a rich history of café culture that dates back to the 17th century.
+            The iconic Café Procope, opened in Paris in 1994, was the first shop to sell coffee that wasn’t
+            from a cart on the street. However, it wasn’t the drink itself that enticed its patrons, but the community it fostered.
+            The lush and inviting interior encouraged people to gather and linger, and the Café Procope became a base for resistance and
+            revolution. It was a clubhouse of sorts for the artistic and political rabble-rousers of the time.
+        </p>
+          <br><br>
+           <center><a href="/about" class="btn btn-success ">Read More</a></center>
+        </div>
+    </div>
+
+    <!-- End Example Code -->
+  </body>
+</html>
+<br><br>
+{% include 'footer.html'%}
